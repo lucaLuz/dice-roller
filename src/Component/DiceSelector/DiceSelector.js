@@ -7,32 +7,32 @@ import './DiceSelector.css'
 
 function DiceSelector({ onDiceSelect }) {
   return (
-    <div id='ofertas'>
+    <div id='jogo'>
       <h1>Selecione um dado para começar</h1>
-      <div className='ofertas__container'>
-        <article className='ofertas__item'>
-          <div className='ofertas__item-image'>
+      <div className='jogo__container'>
+        <article className='jogo__item'>
+          <div className='jogo__item-image'>
             <img src={dado1} alt="" />
           </div>
-          <div className='ofertas__item-cta' >
+          <div className='jogo__item-cta' >
             <button className='btn' onClick={() => onDiceSelect(6)}>6 Lados</button>
             <h3></h3>
           </div>
         </article>
-        <article className='ofertas__item'>
-          <div className='ofertas__item-image'>
+        <article className='jogo__item'>
+          <div className='jogo__item-image'>
             <img src={dado2} alt="" />
           </div>
-          <div className='ofertas__item-cta' >
+          <div className='jogo__item-cta' >
             <button className='btn' onClick={() => onDiceSelect(16)}>16 Lados</button>
             <h3></h3>
           </div>
         </article>
-        <article className='ofertas__item'>
-          <div className='ofertas__item-image'>
+        <article className='jogo__item'>
+          <div className='jogo__item-image'>
             <img src={dado3} alt="" />
           </div>
-          <div className='ofertas__item-cta' >
+          <div className='jogo__item-cta' >
             <button className='btn' onClick={() => onDiceSelect(20)}>20 Lados</button>
             <h3></h3>
           </div>

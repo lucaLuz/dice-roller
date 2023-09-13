@@ -9,12 +9,12 @@ section{
 }
 
 
-#ofertas{
+#jogo{
     position: relative;
     width: 100%;
 }
 
-#ofertas h1{
+#jogo h1{
     font-weight: bold;
     color: var(--texto);
     font-size: 30px;
@@ -23,18 +23,16 @@ section{
     justify-content: center;
 }
 
-.ofertas__container {
+.jogo__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 5%;
 }
 
-.ofertas__item {
+.jogo__item {
     display: flex;
-    background: var(--cards);
     padding: 1.2rem;
     border-radius: 2rem;
-    border: 2px solid var(--cards);
     transition: var(--transition);
     justify-content: center;
     flex-direction: column;
@@ -42,31 +40,31 @@ section{
 }
 
 
-.ofertas__item-image {
+.jogo__item-image {
     border-radius: 5rem;
     overflow: hidden;
     margin-bottom: 35px;
 }
 
-.ofertas__item h2 {
+.jogo__item h2 {
     font-weight: bold;
     margin: 1.2rem 0 0.5rem;
     color: var(--texto);
     font-size: 30px;
 }
 
-.ofertas__item-cta {
+.jogo__item-cta {
     margin-bottom: 1rem;
 }
 
-.ofertas__item-cta p{
+.jogo__item-cta p{
     color: var(--texto);
     font-weight: 600;
     font-size: 15px;
     margin-bottom: 3rem;
 }
 
-.ofertas__item-cta h3{
+.jogo__item-cta h3{
     font-size: 30px;
     color: var(--texto);
 }
@@ -80,12 +78,10 @@ section{
     border-radius: 0.4rem;
     cursor: pointer;
     border: 2px solid var(--amarelo);
-    background: var(--cards);
     transition: var(--transition);
 }
 
 .btn_card1:hover{
-    background: var(--cards);
     border: 2px solid transparent;
 }
 
@@ -93,7 +89,6 @@ section{
     font-weight: bold;
     width: max-content;
     display: inline-block;
-    color: var(--cards);
     background: var(--amarelo);
     padding: 0.75rem 1.2rem;
     border-radius: 0.4rem;
@@ -104,7 +99,7 @@ section{
 /*============================================================ MEDIA QUERYES ================================================*/
 
 @media screen and (max-width:1024px) {
-    .ofertas__container{
+    .jogo__container{
         grid-template-columns: 1fr 1fr;
         gap: 1.2rem;
     }
@@ -113,7 +108,7 @@ section{
 /*============================================================ MEDIA QUERYES ================================================*/
 
 @media screen and (max-width:600px) {
-    .ofertas__container{
+    .jogo__container{
     grid-template-columns: 1fr;
     gap: 1rem;
     }
